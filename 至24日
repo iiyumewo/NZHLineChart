@@ -1,12 +1,759 @@
-Dear all:
-       麦穗作业本iOS教师端最新进度：
-1.	完成[统计（10人天）]的业务功能与UI铺设，完成新增需求[最新列表]的业务功能与UI铺设，完成了[首页列表（2人天）]的UI铺设部分。
-2.	对家长端的网络层进行了重新设计，针对限制跨层数据交流，通过离散型API调用的方式使代码很好的解耦。虽然在业务逻辑的编写上会略微增加代码量，但是能够显著提升代码的清晰度和可调整性。目前采用的架构理念是既可以复制、也可以抽象的情况下选择复制代码，在需求不稳定的情况下尽量避免错误的抽象。
-3.	对家长端进行了组件化设计，用mediator的设计模式，来完成组件之间的交流。组件与组件之间仅暴露出少量的可用接口，通过url拼接的方法实现本地、与远程的调用。
- 
-              UI与逻辑完成的模块有：
-[登录（2 人天）]、[作业概览（4 人天）]、[单题作业详情（4 人天）]、[班级群聊（10 人天）]、[首页列表（2人天）]、[统计（10人天）]。
-逻辑完成的模块有：
-[作业列表（2人天）]、[班群详情（2 人天）]、[单学生作业详情（4 人天）]、[具体作业（左右切题）（10 人天）]、[上传/布置（10 人天）]、[题库（5 人天）]、[收藏（5 人天）]。
- 
-项目进度估算：51人天/（91人天+20人天）
+{
+  "questions": {
+    "1692025": {
+      "id": 1692025,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"若","children":[]},{"name":"tex","value":"JWgErm5DFKvv4b1PoyxpImCWWqIiKoWjUn/fjXSBaeI=?widthRatio=5.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"1pyP0Lu9ETJpSVeewq7Bsyl6XJd8SwHGq76LpmUMxNc=?widthRatio=6.0&heightRatio=2.0","children":[]},{"name":"txt","value":"的最小值是","children":[]},{"name":"u","value":"","children":[{"name":"txt","value":"      ","children":[]}]},{"name":"txt","value":"。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 50,
+      "difficulty": 3.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"6t8/g5TaVTm6m5q9BQzbWA==?widthRatio=3.429&heightRatio=1.286","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查均值不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"由题，","children":[]},{"name":"tex","value":"JWgErm5DFKvv4b1PoyxpImCWWqIiKoWjUn/fjXSBaeI=?widthRatio=5.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"X6LfIavHTUqhhMwzt+zlPQ==?widthRatio=4.071&heightRatio=1.286","children":[]},{"name":"txt","value":"，由均值不等式，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"得","children":[]},{"name":"tex","value":"1pyP0Lu9ETJpSVeewq7Bsyl6XJd8SwHGq76LpmUMxNc=?widthRatio=6.0&heightRatio=2.0","children":[]},{"name":"tex","value":"MCJ/w3DPwu8FRl9f8V6r9LqAMsp1Ve67MY36arSa+Pw=?widthRatio=8.5&heightRatio=2.0","children":[]},{"name":"tex","value":"crw9smku7mDzKhGnlqyglJ2AcQtdvFlB+V6xcr4iRZw=?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"（当","children":[]},{"name":"tex","value":"cXyk6xq9rKLJCXP8s/ex8g==?widthRatio=4.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时取等）。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为","children":[]},{"name":"tex","value":"6t8/g5TaVTm6m5q9BQzbWA==?widthRatio=3.429&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]}]}",
+      "source": "2014-2015学年山东省菏泽市高二上学期期末考试（A）：理数第15题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 223067,
+          "name": "均值不等式",
+          "type": 51
+        },
+        {
+          "id": 196203,
+          "name": "利用均值不等式求最值",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1668953": {
+      "id": 1668953,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"已知实数对","children":[]},{"name":"tex","value":"Cv8pj5T6IBFBezH8urMOfw==?widthRatio=2.214&heightRatio=1.286","children":[]},{"name":"txt","value":"满足","children":[]},{"name":"tex","value":"9PdFkyNZN0jrsDSPEdYMExsboVy/zG+38N1lvW0f9lLLyoXs5c5ZUgf5zL0XtsZpZ0Wy+VvjWYAu7DsEwMacxl+ZSR/1pzi2vGI1Y0Mmzas=?widthRatio=5.071&heightRatio=4.214","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"aRUa6L5B39vBaAl5P9ko6g==?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"的最小值是","children":[]},{"name":"u","value":"","children":[{"name":"txt","value":"     ","children":[]}]},{"name":"txt","value":"。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 50,
+      "difficulty": 3.0,
+      "shortSource": "",
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"w9szX5MVVkKzPTQtDmrYaA==?widthRatio=0.5&heightRatio=1.286","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查简单线性规划。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"根据题意画出可行域如图所示：","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"14f1116cb4e85a3.png?width=323&height=271","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"令","children":[]},{"name":"tex","value":"H+X5khuvXC7aS6mmveRQqg==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，因此","children":[]},{"name":"tex","value":"kZcYeEHoisqY4mbSxuJAKQ==?widthRatio=5.286&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"asctJDWpGaq/ETe64ANZ1Q==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"表示直线的纵截距，根据图象，当直线过点","children":[]},{"name":"tex","value":"EVugoY37whNmyGP1iZUqgQ==?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，即直线","children":[]},{"name":"tex","value":"00XlJXnsFPYY5douG8n+zA==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"和","children":[]},{"name":"tex","value":"NnMv/nzON7uI2yXeeL/30w==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"的交点时，纵截距最小，此时","children":[]},{"name":"tex","value":"qk8NAzC6K4nT/EjWnq/hBP/q9pCWVBzwpI/Cdgm7Ifg2UXkapkAyHISjCf1j+s0b?widthRatio=8.714&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为","children":[]},{"name":"tex","value":"w9szX5MVVkKzPTQtDmrYaA==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]}]}",
+      "source": "2014-2015学年湖南省五市十校高二下学期期末考试：文数第14题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        },
+        {
+          "id": 191503,
+          "name": "简单线性规划",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1636953": {
+      "id": 1636953,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"函数","children":[]},{"name":"tex","value":"NzxN+5aRwD2e9hLYs5AgxVjptUItZIT0daGxc07K/cg=?widthRatio=10.643&heightRatio=1.286","children":[]},{"name":"txt","value":"的定义域为","children":[]},{"name":"tex","value":"Q+MOPjm34/vDoyTtyWzvtQ==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"pc/qlnA3cxu8Ag9jp3tYHQ==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.63421540218361,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"ow3EVGZ69KCw3Ps4zsg76zAPipU55JJ0EXJgkxAIqZQ=?widthRatio=2.357&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"9mbvGB2+h+GAnWpKG9dMT1UVEjbU+adlOorn4ika3Q4=?widthRatio=2.286&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"1ICZASQ53DNiqN5nAohQNlI3doPJl+vgx/EmlDGdsoA=?widthRatio=2.143&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"+DsA/I68Cz8hsoeypYXEoqPDLKucA1O+JnDLuCFLiFdAvMYIBXDC4awX1fh+nEjy?widthRatio=7.929&heightRatio=2.0","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "1",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查对数函数和不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为函数","children":[]},{"name":"tex","value":"NzxN+5aRwD2e9hLYs5AgxVjptUItZIT0daGxc07K/cg=?widthRatio=10.643&heightRatio=1.286","children":[]},{"name":"txt","value":"的定义域为","children":[]},{"name":"tex","value":"Q+MOPjm34/vDoyTtyWzvtQ==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"G1y0B20W5WboXQiX2noY6DXNehi6Ww/sYZ2xFpgKHnE=?widthRatio=7.786&heightRatio=1.286","children":[]},{"name":"txt","value":"在定义域","children":[]},{"name":"tex","value":"JJ8DucgmHHfEtBElUJPULVbpXZ8lxsi66k91/5Fd34w=?widthRatio=2.5&heightRatio=1.286","children":[]},{"name":"txt","value":"上恒成立。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"令","children":[]},{"name":"tex","value":"Qj2DV8obJ84ahRKfLwRaQwdIVt29TTbj9iSIk9BLOjA=?widthRatio=9.071&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"JJ8DucgmHHfEtBElUJPULVbpXZ8lxsi66k91/5Fd34w=?widthRatio=2.5&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"当","children":[]},{"name":"tex","value":"Y7kQvgXwkkaUegTiGnD09g==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，函数","children":[]},{"name":"tex","value":"jg4bgzd+cKocBmeYxC3pQQ==?widthRatio=1.786&heightRatio=1.286","children":[]},{"name":"txt","value":"开口向下，","children":[]},{"name":"tex","value":"jg4bgzd+cKocBmeYxC3pQQ==?widthRatio=1.786&heightRatio=1.286","children":[]},{"name":"txt","value":"不会始终大于零，即","children":[]},{"name":"tex","value":"Qj2DV8obJ84ahRKfLwRaQx0Mb5suTS+Xf/xUrulwR1Q=?widthRatio=10.857&heightRatio=1.286","children":[]},{"name":"txt","value":"在定义域","children":[]},{"name":"tex","value":"JJ8DucgmHHfEtBElUJPULVbpXZ8lxsi66k91/5Fd34w=?widthRatio=2.5&heightRatio=1.286","children":[]},{"name":"txt","value":"上不恒成立，不符合题意；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"当","children":[]},{"name":"tex","value":"b9GUEP96aCX9AclOEgSdgg==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"Qj2DV8obJ84ahRKfLwRaQwdIVt29TTbj9iSIk9BLOjA=?widthRatio=9.071&heightRatio=1.286","children":[]},{"name":"tex","value":"2uMdFAlW3dPcnYLlgc31+A==?widthRatio=3.357&heightRatio=1.286","children":[]},{"name":"txt","value":"在定义域","children":[]},{"name":"tex","value":"JJ8DucgmHHfEtBElUJPULVbpXZ8lxsi66k91/5Fd34w=?widthRatio=2.5&heightRatio=1.286","children":[]},{"name":"txt","value":"上恒成立，符合题意；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"当","children":[]},{"name":"tex","value":"a9xCMucObW1FOUJSgznh5w==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"Qj2DV8obJ84ahRKfLwRaQwdIVt29TTbj9iSIk9BLOjA=?widthRatio=9.071&heightRatio=1.286","children":[]},{"name":"tex","value":"9uIYDejwtvjyHih03nALk5ojXT6kIPwLCc6tkiPCXlM=?widthRatio=8.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"iE7BHj39+PAd8Ix8KzskLA==?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"nW1stIb5CqV8iCM3a8NyB6BahD2NCVbCkDZl9p9bCbE=?widthRatio=7.143&heightRatio=1.286","children":[]},{"name":"txt","value":"。要使","children":[]},{"name":"tex","value":"G1y0B20W5WboXQiX2noY6DXNehi6Ww/sYZ2xFpgKHnE=?widthRatio=7.786&heightRatio=1.286","children":[]},{"name":"txt","value":"在定义域","children":[]},{"name":"tex","value":"JJ8DucgmHHfEtBElUJPULVbpXZ8lxsi66k91/5Fd34w=?widthRatio=2.5&heightRatio=1.286","children":[]},{"name":"txt","value":"上恒成立，那么应满足","children":[]},{"name":"tex","value":"nW1stIb5CqV8iCM3a8NyB6BahD2NCVbCkDZl9p9bCbE=?widthRatio=7.143&heightRatio=1.286","children":[]},{"name":"tex","value":"Exl/mNV84erxV5TbpLJvBg==?widthRatio=1.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，解得","children":[]},{"name":"tex","value":"77r603EzP8qPIcAjmzNfUXa9f5gtIgaaNX3PdEryIxQ=?widthRatio=4.286&heightRatio=2.0","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"综上所述，","children":[]},{"name":"tex","value":"pc/qlnA3cxu8Ag9jp3tYHQ==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是","children":[]},{"name":"tex","value":"uaL6xYk1WThSmmHVtVleNuVTfufpxJF+LYNvY/gWBw4=?widthRatio=4.286&heightRatio=2.0","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为B。","children":[]}]}]}",
+      "source": null,
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 196055,
+          "name": "一次函数和二次函数",
+          "type": 51
+        },
+        {
+          "id": 196059,
+          "name": "二次函数的性质与图象",
+          "type": 61
+        },
+        {
+          "id": 191851,
+          "name": "不等关系与不等式",
+          "type": 51
+        },
+        {
+          "id": 196089,
+          "name": "对数函数的图象与性质",
+          "type": 61
+        },
+        {
+          "id": 222799,
+          "name": "对数与对数函数",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1798105": {
+      "id": 1798105,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"已知实数","children":[]},{"name":"tex","value":"XubEW9+1+hkJqH7jXe5MrA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"Hz6y44ELFVLLNrLVhO3CQA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"满足","children":[]},{"name":"tex","value":"9PdFkyNZN0jrsDSPEdYME/sqUAwXJ/24CTw1krT+hLyfZABt70ygmatoIZwDTDc6lQvHyHu/6jTUV5bKjwOGMglkgUAFe0/akviFHJm6BR+2y9XVdl3Jif/GIBVAjXBDoqI9fxodM5VSDV6i8FNi9g==?widthRatio=5.143&heightRatio=4.214","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"nOjWoze/XzYIUouPg34xZQ==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的最小值是（  ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 4.885396617260996,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"9hrnEgjfm42b3Xo3BJadcA==?widthRatio=0.5&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"0p7nr+Do6f1n686kZL5dBw==?widthRatio=0.714&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"glIXDnLkgFWVbjlRHesYGg==?widthRatio=1.286&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"uJYV3iLGzqVlcVUtPyDETX5CjrVTqLwfMbR1tHH6mGQ=?widthRatio=1.429&heightRatio=2.0","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "2",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查线性规划。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"根据已知，作出可行域如图所示：","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"151bdfa887b58d5.png?width=372&height=314","children":[]}]},{"name":"p","value":"","children":[{"name":"tex","value":"nOjWoze/XzYIUouPg34xZQ==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"asctJDWpGaq/ETe64ANZ1Q==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"取最小值时，直线","children":[]},{"name":"tex","value":"t2+/gBA7wxDdIhJ7HrUDgA==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"在","children":[]},{"name":"tex","value":"Hz6y44ELFVLLNrLVhO3CQA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"轴的截距最大。由图可知，直线","children":[]},{"name":"tex","value":"t2+/gBA7wxDdIhJ7HrUDgA==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"过直线","children":[]},{"name":"tex","value":"Q/2wI+i8qFwL+rI7dDV/qA==?widthRatio=4.071&heightRatio=1.286","children":[]},{"name":"txt","value":"与","children":[]},{"name":"tex","value":"aqGKJvISjRT0fN03IsNVww==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"的交点","children":[]},{"name":"tex","value":"wzJ49qzFvzHGGeCfGG67lA==?widthRatio=2.929&heightRatio=1.286","children":[]},{"name":"txt","value":"时，纵截距最大，为","children":[]},{"name":"tex","value":"9hrnEgjfm42b3Xo3BJadcA==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"asctJDWpGaq/ETe64ANZ1Q==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"的最小值为","children":[]},{"name":"tex","value":"AdHJNZ0GDjdZ780MLOsEyw==?widthRatio=1.5&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为C。","children":[]}]}]}",
+      "source": "2014-2015学年内蒙古自治区东胜区东联现代中学高二上学期期末考试：文数第8题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1618299": {
+      "id": 1618299,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"已知","children":[]},{"name":"tex","value":"gE03coSCLpmgoJuAUZABsvY2DI0f0FoJeK/PC6B3yJo=?widthRatio=6.357&heightRatio=1.286","children":[]},{"name":"txt","value":"，且","children":[]},{"name":"tex","value":"EqWeXw0QUjFNpEkCzEq50P/4JIVLeviw4er+ulmUaJJo0WfcNC0SMdXTW0ml7O5r?widthRatio=6.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"4UTfEAbBaM+xd3QffX0eytA5RgqphqHfmR9Oci85jws=?widthRatio=6.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"mHl0lN+bmA/ow7UBvZpOCg==?widthRatio=1.786&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.373513508301562,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"4MJBEVlx9sosWA23ie0FQbszpSLrQknrQyz82MwW7gk=?widthRatio=2.429&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"fVDkb+Rtz3r9zkQ8m9ArQu2HcOfnoD9J9YOdjwQ5mhw=?widthRatio=2.429&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"sEbEnNQ2AgNYY8WSfb+UPH+cdHEb5ilkceNUyDRttlg=?widthRatio=3.143&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"gRSli31hmbiogmkurUsPtTT/OQtAGb1FbiOs8CZpCms=?widthRatio=3.143&heightRatio=1.286","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "2",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查线性规划。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"已知","children":[]},{"name":"tex","value":"gE03coSCLpmgoJuAUZABsvY2DI0f0FoJeK/PC6B3yJo=?widthRatio=6.357&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"EqWeXw0QUjFNpEkCzEq50J+kE7zmRYFuynIIr3XtHVQ=?widthRatio=4.357&heightRatio=1.286","children":[]},{"name":"tex","value":"gXzINn2rDE2eVNXrpfW90nfnPnAj2N+b+v5fl+NQ1b4=?widthRatio=5.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"4UTfEAbBaM+xd3QffX0eyuM52SHiacFJNT1a6/L77nM=?widthRatio=4.357&heightRatio=1.286","children":[]},{"name":"tex","value":"jJTdQK7VIgAl6H9ztUks3iwDUZ7kPPqDaAPrBF6x/PU=?widthRatio=5.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"gVE035WImkBl74/wEPJ/3efGvkkrVmXL0p5LuRfLrXE=?widthRatio=7.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，两个不等式化简得：","children":[]},{"name":"tex","value":"gx8XWwWCXBpaVco7aaljE3QbR9SpiQTFlqb3tx4B9jo=?widthRatio=3.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"vr1ujX0L5SRv+v2kuwHMfZG73RhktRpAUH5dT72vsmQ=?widthRatio=3.929&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"gai2pEPfdtmsE8qsZiy3jwzoyfLUyqKj3zJ+XwKp8Rg=?widthRatio=4.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"SM/OQO14ntkXBBeLa2s6kepf30A7Nd5G1dpuYgRTA1o=?widthRatio=4.357&heightRatio=1.286","children":[]},{"name":"txt","value":"，作出可行域，及","children":[]},{"name":"tex","value":"inX9lI/SgaTCIipuPk352A==?widthRatio=4.429&heightRatio=1.286","children":[]},{"name":"txt","value":"作为目标函数，","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"14e9043c11e7c0f.png?width=200&height=416","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"目标函数：","children":[]},{"name":"tex","value":"inX9lI/SgaTCIipuPk352A==?widthRatio=4.429&heightRatio=1.286","children":[]},{"name":"txt","value":"表示的是一条斜率为","children":[]},{"name":"tex","value":"+KHPSIYSHmDSFAmgplpxiQ==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"的直线，","children":[]},{"name":"tex","value":"bSIhtJ2IriGATogIQeWbug==?widthRatio=1.286&heightRatio=1.286","children":[]},{"name":"txt","value":"值是直线在","children":[]},{"name":"tex","value":"m/VGGUpsnKNFGYXigdTc/A==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"轴上的截距。由图可知，当目标函数经过点","children":[]},{"name":"tex","value":"H0eUQkrXoqoZYdAXu0Esgw==?widthRatio=2.143&heightRatio=1.286","children":[]},{"name":"txt","value":"、","children":[]},{"name":"tex","value":"VykF7BpO3NFT550xU7Tx1w==?widthRatio=2.143&heightRatio=1.286","children":[]},{"name":"txt","value":"时分别为上下临界值，故将两点代入目标函数，得到","children":[]},{"name":"tex","value":"HKUF09IvFTfUlplJlAhMyA==?widthRatio=4.429&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是","children":[]},{"name":"tex","value":"sEbEnNQ2AgNYY8WSfb+UPH+cdHEb5ilkceNUyDRttlg=?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为C。","children":[]}]}]}",
+      "source": null,
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        },
+        {
+          "id": 191503,
+          "name": "简单线性规划",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1694845": {
+      "id": 1694845,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"圆心在曲线","children":[]},{"name":"tex","value":"6P6kKaZfDsNg4PCTyOt7Uj0RrjhEaRw0sXdAlQJlYog=?widthRatio=2.571&heightRatio=2.0","children":[]},{"name":"txt","value":"（","children":[]},{"name":"tex","value":"W6+jNfDjkvQb4nWE+47z2g==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"）上，且与直线","children":[]},{"name":"tex","value":"BIjMfnKPLy2Uo2Nqu6XjzQ==?widthRatio=6.214&heightRatio=1.286","children":[]},{"name":"txt","value":"相切的面积最小的圆的方程为（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.58890460800346,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"X7LYF6kKfnb4XmVmoRK4w7w0aHhKx8R1/mSUFi7mr8M=?widthRatio=9.786&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"CmuV0n73/E1nkrj5jtVTW5v+oRaRA2CaFe4uUtggsWo=?widthRatio=9.786&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"X7LYF6kKfnb4XmVmoRK4w3jT4kliqXPYSY77vdnQmEc=?widthRatio=10.286&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"CmuV0n73/E1nkrj5jtVTWyYqRm+UpdHXhlXO5MIw/c0=?widthRatio=10.286&heightRatio=1.286","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "0",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查直线与圆的位置关系和均值不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"根据题意：圆心在曲线","children":[]},{"name":"tex","value":"6P6kKaZfDsNg4PCTyOt7Uj0RrjhEaRw0sXdAlQJlYog=?widthRatio=2.571&heightRatio=2.0","children":[]},{"name":"txt","value":"（","children":[]},{"name":"tex","value":"W6+jNfDjkvQb4nWE+47z2g==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"）上，所以设圆心为","children":[]},{"name":"tex","value":"8kPpO5xIXwq9/4Kjq/gROwCBWb2Ly63kdEiQl26PMBo=?widthRatio=2.429&heightRatio=2.0","children":[]},{"name":"txt","value":"，则圆心到直线","children":[]},{"name":"tex","value":"BIjMfnKPLy2Uo2Nqu6XjzQ==?widthRatio=6.214&heightRatio=1.286","children":[]},{"name":"txt","value":"的距离为","children":[]},{"name":"tex","value":"eg3vPM2Mln2kpX54Hig1ymxwjfGe+MVBZiGTb4xbhsl9bivnWU2+CBeSsrMf0S2VuJIfkCSedXg1Aogr0jy7fg==?widthRatio=7.143&heightRatio=3.286","children":[]},{"name":"txt","value":"，根据均值不等式得","children":[]},{"name":"tex","value":"xvDD41vlSpbcpHiNsnhzg4uuI4IEZHxq7JgkWBxQqR+12dXBs1TCl+i/INQglZ9of9MZN/tkID4x3D2nEY7MPQ==?widthRatio=10.429&heightRatio=2.357","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"6aejN4FlTeMqv0cNXPdKGDFBAcRnHfkoZ3xXBiKmtUo=?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，当且仅当","children":[]},{"name":"tex","value":"pWurcjiyYsIYSyGlTyL7OqIJ5OponIJFxZs3NN3YsrI=?widthRatio=3.0&heightRatio=2.0","children":[]},{"name":"txt","value":"时，即","children":[]},{"name":"tex","value":"eCAr9eRtkdgH6k2o3ZRxwg==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"时，取最小值。因为直线与圆相切，所以当","children":[]},{"name":"tex","value":"eCAr9eRtkdgH6k2o3ZRxwg==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"时，圆取最小半径","children":[]},{"name":"tex","value":"vLXdisLLSE6fKpORC23mtg==?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，此时圆心为","children":[]},{"name":"tex","value":"F3gH9zRtCaqs6uOZnMNGBQ==?widthRatio=2.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以面积最小的圆的方程为","children":[]},{"name":"tex","value":"X7LYF6kKfnb4XmVmoRK4w7w0aHhKx8R1/mSUFi7mr8M=?widthRatio=9.786&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为A。","children":[]}]}]}",
+      "source": "2014-2015学年河南省信阳市高一上学期期末考试：数学第11题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 223067,
+          "name": "均值不等式",
+          "type": 51
+        },
+        {
+          "id": 196203,
+          "name": "利用均值不等式求最值",
+          "type": 61
+        },
+        {
+          "id": 196139,
+          "name": "圆的切线问题",
+          "type": 61
+        },
+        {
+          "id": 195385,
+          "name": "直线与圆的位置关系",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1391953": {
+      "id": 1391953,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"设变量","children":[]},{"name":"tex","value":"XubEW9+1+hkJqH7jXe5MrA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"Hz6y44ELFVLLNrLVhO3CQA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"满足约束条件","children":[]},{"name":"tex","value":"HdZT5zgVd/Hz4lFm3GhtSirWbvYWPCewjJ7bYnmzR+8zngoP36zq80WJDinFAfSVoq/qJZ6sRgeleNfF+6ATaOdZNIfivnxcL4u+u+fs1X7vyS1B7+hgWBU8lA6yj6Qw?widthRatio=7.214&heightRatio=4.214","children":[]},{"name":"txt","value":"，则目标函数","children":[]},{"name":"tex","value":"8yQrS9uVFdUJwzk/w7xuMw==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的最大值为（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.718875136082465,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"XQJ6f7XE0ySdEJy5QkMuPw==?widthRatio=1.286&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"XgTIkslIRkUR8ajnRk2deg==?widthRatio=0.5&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"zYNaVgo0Jd+BqHEXasFxyA==?widthRatio=0.571&heightRatio=2.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"X6iJNuFeF/rBw2Gd0zF7BQ==?widthRatio=0.5&heightRatio=1.286","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "3",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查简单线性规划。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"根据题中约束条件作可行域如下图阴影区域所示，","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"14d093bb63a5371.png?width=265&height=250","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"由图可知，当直线","children":[]},{"name":"tex","value":"8yQrS9uVFdUJwzk/w7xuMw==?widthRatio=4.571&heightRatio=1.286","children":[]},{"name":"txt","value":"经过点","children":[]},{"name":"tex","value":"KMg4aIIHbeJcPnqQbHBzJA==?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"asctJDWpGaq/ETe64ANZ1Q==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"取得最大值，为","children":[]},{"name":"tex","value":"X6iJNuFeF/rBw2Gd0zF7BQ==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为D。","children":[]}]}]}",
+      "source": null,
+      "solutionAccessories": [
+        
+      ],
+      "flags": [
+        {
+          "id": 1215,
+          "name": "练习册"
+        }
+      ],
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        },
+        {
+          "id": 191503,
+          "name": "简单线性规划",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1684829": {
+      "id": 1684829,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（本小题满分14分）","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"等差数列","children":[]},{"name":"tex","value":"VdV8fEFK6XTyuHQLENYSnw==?widthRatio=2.0&heightRatio=1.286","children":[]},{"name":"txt","value":"的首项是","children":[]},{"name":"tex","value":"9U2j1Gbqm0O79gD5ES/JNw==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"，公差","children":[]},{"name":"tex","value":"hg0FLK2zqf1KoGrGgrwSow==?widthRatio=3.0&heightRatio=1.286","children":[]},{"name":"txt","value":"，前","children":[]},{"name":"tex","value":"ZsZs11iKEvfmzDIurZth8g==?widthRatio=0.643&heightRatio=1.286","children":[]},{"name":"txt","value":"项和为","children":[]},{"name":"tex","value":"k+5plbojdhiOg6Fy+/s+5A==?widthRatio=1.071&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）若","children":[]},{"name":"tex","value":"KJ0UKEHzE8mtNfMfYqWss78Oe8aypX+We2W3iNh8QSA=?widthRatio=5.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，且存在","children":[]},{"name":"tex","value":"oaYQo3FUArROGXyeVHhzz7cm8di4jvD+V9d1TjFzJpw=?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，使","children":[]},{"name":"tex","value":"yaokVgYaN4TkCIeW7lm4sQ==?widthRatio=3.643&heightRatio=1.286","children":[]},{"name":"txt","value":"成立，求","children":[]},{"name":"tex","value":"9U2j1Gbqm0O79gD5ES/JNw==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的值；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）若","children":[]},{"name":"tex","value":"ZCLShTJM9Qo33oEewp3oQ2uVswSLZG9vCfPN8hZiN7JutcVy6HL6lpJKfpQjSRJ+?widthRatio=10.286&heightRatio=2.143","children":[]},{"name":"txt","value":"对任意大于","children":[]},{"name":"tex","value":"7rcVY9u25Rg5EdwYVzpzgg==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"的正整数","children":[]},{"name":"tex","value":"ZsZs11iKEvfmzDIurZth8g==?widthRatio=0.643&heightRatio=1.286","children":[]},{"name":"txt","value":"均成立，求","children":[]},{"name":"tex","value":"9U2j1Gbqm0O79gD5ES/JNw==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 13,
+      "difficulty": 5.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（1）依题意，得","children":[]},{"name":"tex","value":"+bYvVY1PrHHnQELsJ4A5dyRNf/QtDSZX/HhMDZloXgrb5vkXTfhNshluOyZy71lm?widthRatio=9.5&heightRatio=2.071","children":[]},{"name":"tex","value":"9vPeDoIZ/54n6NOcqjDUUkAGrhQHoydmp3IWpfm5GQI4FoMCUoPoUQ7YWBkfB5mf?widthRatio=8.929&heightRatio=2.0","children":[]},{"name":"tex","value":"hmkAdWptewP5puAQNOLZtg==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"整理得","children":[]},{"name":"tex","value":"/QBdbAMM6zFCNllMF7crT6KlcH9CabyFQvUMKDVYIWY=?widthRatio=10.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，      ......2分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为","children":[]},{"name":"tex","value":"oaYQo3FUArROGXyeVHhzz7cm8di4jvD+V9d1TjFzJpw=?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，由求根公式得","children":[]},{"name":"tex","value":"W9WVXToVQpkamk6qFVCDYVIJEZ1asnV89kNaION8RTWChsHtdCPePcrZPYIW5pG6RkPVJuWnBRx94vvHrMnvQQ==?widthRatio=14.5&heightRatio=2.214","children":[]},{"name":"txt","value":"，      ......3分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"要求","children":[]},{"name":"tex","value":"F+2rOk5CURABEEq+vgtP7pH0DKyBGzQfpBNiObxPFyw=?widthRatio=6.5&heightRatio=1.286","children":[]},{"name":"txt","value":"必是完全平方数，   ......5分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为","children":[]},{"name":"tex","value":"KJ0UKEHzE8mtNfMfYqWss78Oe8aypX+We2W3iNh8QSA=?widthRatio=5.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，逐个检验知，","children":[]},{"name":"tex","value":"HaxbXk0khX9IMhunf/YHgg==?widthRatio=2.714&heightRatio=1.286","children":[]},{"name":"txt","value":"符合要求，此时","children":[]},{"name":"tex","value":"lJkZ9seZR21grPT0E/ss/A==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"。      ......7分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）由","children":[]},{"name":"tex","value":"ZCLShTJM9Qo33oEewp3oQ2uVswSLZG9vCfPN8hZiN7JutcVy6HL6lpJKfpQjSRJ+?widthRatio=10.286&heightRatio=2.143","children":[]},{"name":"txt","value":"，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"所以","children":[]},{"name":"tex","value":"E49VTa99j0SH2XAjRvBf4jMvyA4cu1EuYnrttuV4taAxxjc7/vXdo1VxKBaAr8nR?widthRatio=8.857&heightRatio=2.0","children":[]},{"name":"tex","value":"k9jTQmplXBppL+wVY1mFDmvFj4j87TJnYa90BdNpgx1RHxQrq+qlqjunuKlIJGA3?widthRatio=11.214&heightRatio=2.143","children":[]},{"name":"txt","value":"，      ......9分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"整理得","children":[]},{"name":"tex","value":"9KbdlsouGfrILMA2pLEGkKoJANkxE7H+2DW6C/NOFUI=?widthRatio=8.857&heightRatio=2.143","children":[]},{"name":"txt","value":"，      ......10分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为","children":[]},{"name":"tex","value":"VaUaxoqz/bP0L09iIDgRDA==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"kX1rAJGsK19O10B4hpwzBz9pZp8rX6hoA0e7M6HupDo=?widthRatio=5.429&heightRatio=2.0","children":[]},{"name":"txt","value":"，      ......12分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"所以当","children":[]},{"name":"tex","value":"Dt9E8zJ1EQ2GaAR3+Pl4yw==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"31ndHnv1T0PRe2j/lrhngMmw3hVz1uLesmHVRqa63m0=?widthRatio=3.214&heightRatio=2.0","children":[]},{"name":"txt","value":"取到最大值","children":[]},{"name":"tex","value":"AmNTLtwzdGFaMDs6i4jLGv9wP3tghAavxDhvDeD4k48=?widthRatio=1.429&heightRatio=2.0","children":[]},{"name":"txt","value":"，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故","children":[]},{"name":"tex","value":"7HaL0wDr7CqrXjSORKttlQ==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是","children":[]},{"name":"tex","value":"y0f9G04FYxnXHm32YcJ+dyez8QLNSyvYmjQ7YIMB8d8=?widthRatio=4.357&heightRatio=2.0","children":[]},{"name":"txt","value":"。      ......14分","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查等差数列的求和公式以及不等关系和不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）对等差数列求和得到","children":[]},{"name":"tex","value":"prwe1BcWngzznU+UlTPxnw==?widthRatio=1.071&heightRatio=1.286","children":[]},{"name":"txt","value":"，因为","children":[]},{"name":"tex","value":"yaokVgYaN4TkCIeW7lm4sQ==?widthRatio=3.643&heightRatio=1.286","children":[]},{"name":"txt","value":"有正整数解","children":[]},{"name":"tex","value":"ZsZs11iKEvfmzDIurZth8g==?widthRatio=0.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，分别将","children":[]},{"name":"tex","value":"+TxjwFzWDuinx1oEHIRmOA==?widthRatio=2.714&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"AO16NTt3MKb6K8RJQb3PEw==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"w9szX5MVVkKzPTQtDmrYaA==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"代入式中验证即可求出","children":[]},{"name":"tex","value":"+TxjwFzWDuinx1oEHIRmOA==?widthRatio=2.714&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）将","children":[]},{"name":"tex","value":"omA/EI2txGtjujQpBoA11w==?widthRatio=1.0&heightRatio=1.286","children":[]},{"name":"txt","value":"和","children":[]},{"name":"tex","value":"k+5plbojdhiOg6Fy+/s+5A==?widthRatio=1.071&heightRatio=1.286","children":[]},{"name":"txt","value":"的表达式代入（2）中不等式整理得到关于","children":[]},{"name":"tex","value":"7HaL0wDr7CqrXjSORKttlQ==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的不等式，进而根据不等式恒成立确定","children":[]},{"name":"tex","value":"7HaL0wDr7CqrXjSORKttlQ==?widthRatio=0.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围。","children":[]}]}]}",
+      "source": "2014-2015学年福建省南平市高一下学期期末考试：数学第22题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195447,
+          "name": "数列的应用",
+          "type": 51
+        },
+        {
+          "id": 191493,
+          "name": "数列与不等式综合",
+          "type": 61
+        },
+        {
+          "id": 195787,
+          "name": "等差数列求和公式（前n项和）",
+          "type": 61
+        },
+        {
+          "id": 191851,
+          "name": "不等关系与不等式",
+          "type": 51
+        },
+        {
+          "id": 195439,
+          "name": "等差数列求和公式（前n项和）",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1734871": {
+      "id": 1734871,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（本小题满分12分）","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"设集合","children":[]},{"name":"tex","value":"a4K0EB7bVpjNI/dFgvJEg4xXIOntUjtp4jRrohhA2BxbyPGyqB6DkhOET5Pax6Du?widthRatio=12.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，集合","children":[]},{"name":"tex","value":"q1djlrfSWHAqH21hBgtrSw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"tex","value":"rj6W22mVYNX/YbwkMquVUw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"tex","value":"rMiIN7Lb2uU17i3FHf9JZJ4gydx8R0TDD1bU+/N0cmBv7kPOAxiDm+ebpDf4mMek?widthRatio=7.714&heightRatio=2.071","children":[]},{"name":"txt","value":"，集合","children":[]},{"name":"tex","value":"TKU5UzNEMzEJwORo6mbEYA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"为不等式","children":[]},{"name":"tex","value":"rXHf6cwl8QIrSCH6Ykkyqm7n0rb2ujgQHslTIyfnS4EVwwDcky3roUfzZ4UYP8DA?widthRatio=8.5&heightRatio=2.0","children":[]},{"name":"txt","value":"的解集。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）求","children":[]},{"name":"tex","value":"je52W4gZ6/mwTPpAHULjwA==?widthRatio=2.643&heightRatio=1.286","children":[]},{"name":"txt","value":"；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）若","children":[]},{"name":"tex","value":"zzCkdp4th9Ie2TeCAt398YI8YVQfT57XcJeZuk2+9Hg3+Z5B5ltkwDCr4fDwoQGx?widthRatio=3.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，求","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 13,
+      "difficulty": 5.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（1）由于","children":[]},{"name":"tex","value":"cSrLKot1UhOd1kOXiwDtgV8Hbc7J+HPl4jCQHpe2DrI=?widthRatio=7.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，解得","children":[]},{"name":"tex","value":"c6BcIwcVQ8t9NQ7o7n+T241fxt3xvifbYQUmNoKOINk=?widthRatio=8.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，又当","children":[]},{"name":"tex","value":"fYXnAKQviji7fv6OU00X3w==?widthRatio=3.071&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"oKNH+wgHpue6FbUiuI2tXzxIYAWYSb3b+N6klC4I1ns=?widthRatio=6.0&heightRatio=2.071","children":[]},{"name":"tex","value":"wraK/EDLj56CPn8sQcmMjfOlamcvuVngLeIs8yooFtg=?widthRatio=8.571&heightRatio=2.071","children":[]},{"name":"tex","value":"3r0uvPOmzcRqUQ4HYAvxMl8AQWaVcSldywmezpFo/FDDdtKqMyw7fEeKgvDLMVpU?widthRatio=11.357&heightRatio=2.357","children":[]},{"name":"txt","value":"，当且仅当","children":[]},{"name":"tex","value":"v2kYf6U2hO0Yy44FrEQ0OqKSYz5qouapI/37mW3hhH8=?widthRatio=5.929&heightRatio=2.071","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"F20DA9b5PZyvxJH27l4LOQ==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时等号成立；当","children":[]},{"name":"tex","value":"cRBUfguYd1wxu9rmf4P5COGx+tAfFQAn22rNhrwbUVI=?widthRatio=3.071&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"YfI4Kh5qVx++lIxOfAL/nN0654mvj3UZyt0ILtnCAst2Ct32scJPMpVJ2oGlKaCm+9A6P6CqWP7h6AKjxnDVpA==?widthRatio=11.786&heightRatio=2.357","children":[]},{"name":"tex","value":"aIGV1K743B6h3qzGrsipRw==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"，当且仅当","children":[]},{"name":"tex","value":"v2kYf6U2hO0Yy44FrEQ0OqKSYz5qouapI/37mW3hhH8=?widthRatio=5.929&heightRatio=2.071","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"iE7BHj39+PAd8Ix8KzskLA==?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"时，取得等号，所以","children":[]},{"name":"tex","value":"1fJctp28zCzBtqkoOosBBg4LmQhYPBiRuBXYMcfhSI5kCUuPlJkL4o/0uj/bIiZQ?widthRatio=9.071&heightRatio=1.286","children":[]},{"name":"tex","value":"su6rqUCfXISKI713J1FDwHBTu5yPMlZDaJmEk4kASeY=?widthRatio=4.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"jfSEWOiObCd2WDY8eJ/c5A==?widthRatio=3.643&heightRatio=1.286","children":[]},{"name":"tex","value":"/aQiawiSjFtFJniTy+/6wH6/wiS/M/crzQgoyUbhj+gw3rSKqPSlMxkb1NXoAFRo?widthRatio=6.643&heightRatio=1.286","children":[]},{"name":"txt","value":"；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）因为","children":[]},{"name":"tex","value":"c6BcIwcVQ8t9NQ7o7n+T241fxt3xvifbYQUmNoKOINk=?widthRatio=8.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以有","children":[]},{"name":"tex","value":"uEBG9t3VLjYkRmq+Sgmz6Lujhz1JnLEXEzxcYCDU5aizWTvAPlGmvWanieoxNV0mHU5c6J1PkM+BIXHO22iY+Q==?widthRatio=11.429&heightRatio=1.286","children":[]},{"name":"txt","value":"，由","children":[]},{"name":"tex","value":"rXHf6cwl8QIrSCH6Ykkyqm7n0rb2ujgQHslTIyfnS4EVwwDcky3roUfzZ4UYP8DA?widthRatio=8.5&heightRatio=2.0","children":[]},{"name":"txt","value":"，当","children":[]},{"name":"tex","value":"tTezQBAZXueODh3ng2kHIg==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，解得","children":[]},{"name":"tex","value":"tFMSg+FvyUCqmPCTslcKq0k+IENp0BLj/KOpUQq2Yog=?widthRatio=3.143&heightRatio=1.286","children":[]},{"name":"txt","value":"或者","children":[]},{"name":"tex","value":"51S7iSYXv0uLqkd/lBbAbMMeq5s0008pAlv6yX0Aze0=?widthRatio=3.0&heightRatio=2.0","children":[]},{"name":"txt","value":"；当","children":[]},{"name":"tex","value":"t1pHPvJ7AlZl1FT6fv2UoA==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，解得","children":[]},{"name":"tex","value":"FCDUJH1/jsXK5plUWlm584WCwqDBKKH3q05tcKSUAg1MccqD6VWOFJqkN12qHzkR?widthRatio=5.5&heightRatio=2.0","children":[]},{"name":"txt","value":"。欲使","children":[]},{"name":"tex","value":"zzCkdp4th9Ie2TeCAt398YI8YVQfT57XcJeZuk2+9Hg3+Z5B5ltkwDCr4fDwoQGx?widthRatio=3.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，则当","children":[]},{"name":"tex","value":"tTezQBAZXueODh3ng2kHIg==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"NMaovk9HB8fvyYQD6sU6MzKLnY1zSVKwox3z4fYh7T0=?widthRatio=3.0&heightRatio=2.0","children":[]},{"name":"txt","value":"，解得","children":[]},{"name":"tex","value":"k9qWXNYdY4ptSYU2YcKNkVaq2fDmVxJHZ8rh+IqIVtuI0t028MiA8pBE5m/4Vv/n?widthRatio=5.857&heightRatio=2.214","children":[]},{"name":"txt","value":"；当","children":[]},{"name":"tex","value":"t1pHPvJ7AlZl1FT6fv2UoA==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"时，不符合题意。所以","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是","children":[]},{"name":"tex","value":"oP3y69gZFj7xq0/8aCNvdHnsxF7XXioezktsJUS+uKI=?widthRatio=3.857&heightRatio=2.214","children":[]},{"name":"txt","value":"。","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查集合的运算、对数函数，一元二次不等式和均值不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）分别通过对数函数的真数大于","children":[]},{"name":"tex","value":"XgTIkslIRkUR8ajnRk2deg==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"和均值不等式求出集合","children":[]},{"name":"tex","value":"pi/GsQ3apuRt43V3XQq/tA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"和集合","children":[]},{"name":"tex","value":"q1djlrfSWHAqH21hBgtrSw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，然后求得","children":[]},{"name":"tex","value":"je52W4gZ6/mwTPpAHULjwA==?widthRatio=2.643&heightRatio=1.286","children":[]},{"name":"txt","value":"即可；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）对集合","children":[]},{"name":"tex","value":"TKU5UzNEMzEJwORo6mbEYA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"进行分类讨论，由（1）得","children":[]},{"name":"tex","value":"uEBG9t3VLjYkRmq+Sgmz6Lujhz1JnLEXEzxcYCDU5agb9kvqdZyKC+wuHmBbNeYTvD0QanqFRgFSibZTEtPHkA==?widthRatio=10.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，根据题中条件即可得到结果。","children":[]}]}]}",
+      "source": "2014-2015学年湖北省武汉市华中师范大学第一附属中学高一上学期期末考试：数学第17题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 191351,
+          "name": "集合的运算",
+          "type": 61
+        },
+        {
+          "id": 191751,
+          "name": "集合的运算",
+          "type": 51
+        },
+        {
+          "id": 223067,
+          "name": "均值不等式",
+          "type": 51
+        },
+        {
+          "id": 196203,
+          "name": "利用均值不等式求最值",
+          "type": 61
+        },
+        {
+          "id": 196059,
+          "name": "二次函数的性质与图象",
+          "type": 61
+        },
+        {
+          "id": 196089,
+          "name": "对数函数的图象与性质",
+          "type": 61
+        },
+        {
+          "id": 195449,
+          "name": "一元二次不等式",
+          "type": 51
+        },
+        {
+          "id": 222799,
+          "name": "对数与对数函数",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1680727": {
+      "id": 1680727,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"若关于","children":[]},{"name":"tex","value":"XubEW9+1+hkJqH7jXe5MrA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的不等式","children":[]},{"name":"tex","value":"cmn4/NJRXp+alBmkwaopstbDbZjgNL5HyTz/SzLuc3w=?widthRatio=7.643&heightRatio=1.286","children":[]},{"name":"tex","value":"CoH+HpWUVFwvxBdHEVMsYQ==?widthRatio=4.214&heightRatio=1.286","children":[]},{"name":"txt","value":"有实数解，则实数","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围为","children":[]},{"name":"u","value":"","children":[{"name":"txt","value":"  ","children":[]}]},{"name":"txt","value":"。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 50,
+      "difficulty": 3.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"RNDGzxSewpP6wsg3D15XcnFgVlOO7y6I7gzvyjNqLIY=?widthRatio=7.857&heightRatio=1.286","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查分段函数和解不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"令","children":[]},{"name":"tex","value":"9iC793ZkyDHhRJrWyjoMuz2WazQmBw1mjgXhNW54gc0=?widthRatio=10.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"r+utW7X81dG8+Kt0GLJXty6BRufM/Ou0HlTjSZ0iJEoM3ZUJbsJ/7k43G4YCac4tIPEtFl6XtfP7zIFBer+s/a7kRdmdkODiZHUiHKxTVshaVnpLgBoAluc9+NvJ6ZKQU8XGiCjfLY7JsoTUy7UXDhqPeEJsflUOWSLClhDUoQvO+Et7L1hBAGqmhoj9RTLttvr1jEFEGLmnDMGaAuT1xkn8PuLxz4fGD3GNx7AM8HA=?widthRatio=13.786&heightRatio=5.857","children":[]},{"name":"txt","value":"，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"可以得到","children":[]},{"name":"tex","value":"kxZTV1ch/F5EnAUBqxTBts0ZrD5ERVqKoPsBRJsSJ3Q=?widthRatio=5.786&heightRatio=1.286","children":[]},{"name":"txt","value":"。所以原不等式有实数解等价于","children":[]},{"name":"tex","value":"kxZTV1ch/F5EnAUBqxTBtt+PMp2tzoE9v2SVlFqsJKA=?widthRatio=10.214&heightRatio=1.286","children":[]},{"name":"txt","value":"，解得","children":[]},{"name":"tex","value":"tRjwIE9W8BOAKUU/f1YNsw==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"或","children":[]},{"name":"tex","value":"1AuHwys0yo/ITAURjNBYSA==?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为","children":[]},{"name":"tex","value":"RNDGzxSewpP6wsg3D15XcnFgVlOO7y6I7gzvyjNqLIY=?widthRatio=7.857&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]}]}",
+      "source": "2014-2015学年江西省吉安市高二下学期期末考试：理数第18题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195809,
+          "name": "不等式中恒成立与存在性问题",
+          "type": 61
+        },
+        {
+          "id": 196043,
+          "name": "分段函数",
+          "type": 61
+        },
+        {
+          "id": 191851,
+          "name": "不等关系与不等式",
+          "type": 51
+        },
+        {
+          "id": 195353,
+          "name": "函数的表示方法",
+          "type": 51
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1619895": {
+      "id": 1619895,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"FxuxUGSTUrb6oFnm8R6yVzBZ9SzuINdw05bQKS1VPNs=?widthRatio=3.214&heightRatio=1.286","children":[]},{"name":"txt","value":"中，三个顶点坐标为","children":[]},{"name":"tex","value":"hUWzxCdcQyheb2ly+o9jRg==?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"UXZjzczmUEBcAWOuTzwe+g==?widthRatio=3.714&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"8aJSUoLi4rK/EZ47bL8QRw==?widthRatio=2.929&heightRatio=1.286","children":[]},{"name":"txt","value":"，点","children":[]},{"name":"tex","value":"kyujQA9JEEfOzSysFBnMcw==?widthRatio=3.0&heightRatio=1.286","children":[]},{"name":"txt","value":"在","children":[]},{"name":"tex","value":"FxuxUGSTUrb6oFnm8R6yVzBZ9SzuINdw05bQKS1VPNs=?widthRatio=3.214&heightRatio=1.286","children":[]},{"name":"txt","value":"内部和边界上运动，则","children":[]},{"name":"tex","value":"vr7KLW28jJ7bDks1VBushw==?widthRatio=4.071&heightRatio=1.286","children":[]},{"name":"txt","value":"的最大值及最小值是（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 4.8751266701185925,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"w9szX5MVVkKzPTQtDmrYaA==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"7rcVY9u25Rg5EdwYVzpzgg==?widthRatio=0.5&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"WDa3CFFbujv+acHNTSW8sQ==?widthRatio=1.214&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"sKyeavSypX697nW/Y5bSkA==?widthRatio=1.286&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"7rcVY9u25Rg5EdwYVzpzgg==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"sKyeavSypX697nW/Y5bSkA==?widthRatio=1.286&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"w9szX5MVVkKzPTQtDmrYaA==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"WDa3CFFbujv+acHNTSW8sQ==?widthRatio=1.214&heightRatio=1.286","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "2",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查简单的线性规划。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"作出可行域如下图，","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"14e95e3a5e68fc0.png?width=251&height=235","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"由图可以看出，当","children":[]},{"name":"tex","value":"vr7KLW28jJ7bDks1VBushw==?widthRatio=4.071&heightRatio=1.286","children":[]},{"name":"txt","value":"经过","children":[]},{"name":"tex","value":"q1djlrfSWHAqH21hBgtrSw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时取得最小值","children":[]},{"name":"tex","value":"sKyeavSypX697nW/Y5bSkA==?widthRatio=1.286&heightRatio=1.286","children":[]},{"name":"txt","value":"，经过","children":[]},{"name":"tex","value":"TKU5UzNEMzEJwORo6mbEYA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时取得最大值","children":[]},{"name":"tex","value":"7rcVY9u25Rg5EdwYVzpzgg==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为C。","children":[]}]}]}",
+      "source": null,
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        },
+        {
+          "id": 191503,
+          "name": "简单线性规划",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1667081": {
+      "id": 1667081,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（本小题满分12分）","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"已知函数","children":[]},{"name":"tex","value":"zvE3UUQCCklY/Mdw8fXdXaCYw0ysAwxTBT144WaImqqwbhxaUxK6Q/jKsEVW/uKy?widthRatio=8.929&heightRatio=1.286","children":[]},{"name":"txt","value":"的定义域为集合","children":[]},{"name":"tex","value":"pi/GsQ3apuRt43V3XQq/tA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，函数","children":[]},{"name":"tex","value":"zBgnH3nXlW08Rrba/4OQplQBestRD9BFYqtNd5OVAic=?widthRatio=5.071&heightRatio=2.0","children":[]},{"name":"txt","value":"（","children":[]},{"name":"tex","value":"7Wt6fjRbgeY5SCpH/9bZPpURAXHNxTq9YpMmIELfwZY=?widthRatio=4.929&heightRatio=1.286","children":[]},{"name":"txt","value":"）的值域为集合","children":[]},{"name":"tex","value":"q1djlrfSWHAqH21hBgtrSw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）求","children":[]},{"name":"tex","value":"je52W4gZ6/mwTPpAHULjwA==?widthRatio=2.643&heightRatio=1.286","children":[]},{"name":"txt","value":"；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）若","children":[]},{"name":"tex","value":"eICGulzC/FTIfLupHNxtAqqAtnCZ1nhQf2D8Qkj+PP5QsmvS5ytwEAqSSqDl/ZoL?widthRatio=10.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，且","children":[]},{"name":"tex","value":"f+JK2jF7Aq1Iyi/GOzRQF1ZniV1hljEMoMdu0QJsA1g=?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，求实数","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 13,
+      "difficulty": 5.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（1）要使函数","children":[]},{"name":"tex","value":"G6WxJ307HB2e1l7Qz3uNbQ==?widthRatio=1.857&heightRatio=1.286","children":[]},{"name":"txt","value":"有意义，应满足","children":[]},{"name":"tex","value":"hPLRxUwWDmJk86tuykjVWvs3FAgABEyrynRyTTR/0Mo=?widthRatio=6.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"mIjxc6aN9s4xHI8TKeaBxCV6hcpdaq8MnY3sNND78Yc=?widthRatio=4.0&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"/xncoo7KIjZTK2xZ/QIy4JPEypF3tYGutKkqBpeOjG0=?widthRatio=2.357&heightRatio=1.286","children":[]},{"name":"txt","value":"，故","children":[]},{"name":"tex","value":"9es9TIdzDnGhM7u9938ayBZzATegZYOP2fv+TESgdAo=?widthRatio=6.143&heightRatio=1.286","children":[]},{"name":"txt","value":"      ......3分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为","children":[]},{"name":"tex","value":"zBgnH3nXlW08Rrba/4OQplQBestRD9BFYqtNd5OVAic=?widthRatio=5.071&heightRatio=2.0","children":[]},{"name":"txt","value":"在","children":[]},{"name":"tex","value":"scYOl+SzOqdr9AOwlBxSjw==?widthRatio=2.714&heightRatio=1.286","children":[]},{"name":"txt","value":"上单调递减，而","children":[]},{"name":"tex","value":"st6n36rSwRqMdsVtQeBYAA==?widthRatio=4.286&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"4Qcp90fejMYzg0r2A3OzRw==?widthRatio=3.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，故","children":[]},{"name":"tex","value":"KozQyVqvhEPrC4F7MQTc1nHWurzR6EShJrF/mv2f2svCwpgFFLuSsnF4MKXVIEiQ?widthRatio=8.0&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"Qkt4n/hpZkUFf5ETR9asbPvVtYBkg6RAY73nvu79fEE=?widthRatio=5.357&heightRatio=1.286","children":[]},{"name":"txt","value":"。      ......6分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）因为","children":[]},{"name":"tex","value":"f+JK2jF7Aq1Iyi/GOzRQF1ZniV1hljEMoMdu0QJsA1g=?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"①当","children":[]},{"name":"tex","value":"ZFK5DQ/I9gLZ0WBL5MO65nlaq/hucT4wfTkYZScV7io=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时满足题意，此时有","children":[]},{"name":"tex","value":"GKRtXQQRLNs+GLWUZ6hxvg==?widthRatio=4.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"tRjwIE9W8BOAKUU/f1YNsw==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"；      ......8分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"②当","children":[]},{"name":"tex","value":"FRZYhkBIBczF7x3y5gvTqJAlKzUOecXGOY3Ix9ir3YI=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时，则有","children":[]},{"name":"tex","value":"9PdFkyNZN0jrsDSPEdYME8FEPzVc20PPJEyFuyEOA7kvKbA4tRaiBJoFhEUHAe4ZoCVtO/eONtfSxtT/d1GBrD0NrQ+I4ryxek20LQldIHYrlIazP7TKKcbZsEVNIh3p?widthRatio=5.5&heightRatio=4.214","children":[]},{"name":"txt","value":"，解得","children":[]},{"name":"tex","value":"sv/xEcCpt/3X642vdXOtKVFP8uNshu3zwhDwxgTr4E1rc7kRMe+71rx+DFAcUH+P?widthRatio=4.286&heightRatio=2.0","children":[]},{"name":"txt","value":"；      ......11分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"综上所述，实数","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围是","children":[]},{"name":"tex","value":"jp6LHxS7oA9dYH6OJOpsgNFvY7qUKoC3dmqLxxpaIJE=?widthRatio=3.5&heightRatio=2.0","children":[]},{"name":"txt","value":"。      ......12分","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查集合的运算以及不等关系与不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）分别由定义和单调性求出集合","children":[]},{"name":"tex","value":"pi/GsQ3apuRt43V3XQq/tA==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"和","children":[]},{"name":"tex","value":"q1djlrfSWHAqH21hBgtrSw==?widthRatio=0.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，再求","children":[]},{"name":"tex","value":"je52W4gZ6/mwTPpAHULjwA==?widthRatio=2.643&heightRatio=1.286","children":[]},{"name":"txt","value":"；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）分","children":[]},{"name":"tex","value":"ZFK5DQ/I9gLZ0WBL5MO65nlaq/hucT4wfTkYZScV7io=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"和","children":[]},{"name":"tex","value":"FRZYhkBIBczF7x3y5gvTqJAlKzUOecXGOY3Ix9ir3YI=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"两种情况讨论","children":[]},{"name":"tex","value":"mRKL/orzOudCEARA8qn3Kw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"的取值范围，之后再求其并集。","children":[]}]}]}",
+      "source": "2014-2015学年河南省信阳市高二下学期期末考试：文数第17题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 191351,
+          "name": "集合的运算",
+          "type": 61
+        },
+        {
+          "id": 191751,
+          "name": "集合的运算",
+          "type": 51
+        },
+        {
+          "id": 191851,
+          "name": "不等关系与不等式",
+          "type": 51
+        },
+        {
+          "id": 195807,
+          "name": "不等式的概念与性质",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1640009": {
+      "id": 1640009,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"若","children":[]},{"name":"tex","value":"Ce0DoueeV/yZXtpezBWMhA==?widthRatio=4.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"WdbvvVVrHSvTn4FvfTMlYA==?widthRatio=4.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，则下面不等式中一定成立的是（  ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.422856850820033,
+      "shortSource": null,
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"kak+chcdbfyvB5Q2MlSCVw==?widthRatio=4.643&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"CdeGqPzYfUOs4F5FJfMAdA==?widthRatio=4.643&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"RMMDedD++QcMXDmNdBvAjg==?widthRatio=5.143&heightRatio=1.286","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"RzMqR/MOXg6svicFG/zXhQ==?widthRatio=5.143&heightRatio=1.286","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "3",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查不等式的性质。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"因为","children":[]},{"name":"tex","value":"Ce0DoueeV/yZXtpezBWMhA==?widthRatio=4.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"WdbvvVVrHSvTn4FvfTMlYA==?widthRatio=4.643&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"Py9TLQ0H1lCEgzHd9RrVpxfINbhNSCH8R1gnCw8j9w0=?widthRatio=9.071&heightRatio=1.286","children":[]},{"name":"txt","value":"，又因为","children":[]},{"name":"tex","value":"K//5dUDNPLtqvF6MQJ00fyjHKqq+/QFlTA/ztVuf3Uk=?widthRatio=11.571&heightRatio=1.286","children":[]},{"name":"tex","value":"9WNnwq33pVgXD88FXO0kPA==?widthRatio=2.714&heightRatio=1.286","children":[]},{"name":"tex","value":"98Ij49kYBojB1k8Y4bFpnzBaJae76Qf4fM2y6IWVxK4=?widthRatio=7.143&heightRatio=1.286","children":[]},{"name":"tex","value":"ExsrO6Cq1AVEZ7ehGW5Xdw==?widthRatio=3.786&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以由不等式的传递性知","children":[]},{"name":"tex","value":"RzMqR/MOXg6svicFG/zXhQ==?widthRatio=5.143&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为D。","children":[]}]}]}",
+      "source": null,
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 191851,
+          "name": "不等关系与不等式",
+          "type": 51
+        },
+        {
+          "id": 195807,
+          "name": "不等式的概念与性质",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1684459": {
+      "id": 1684459,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"若实数","children":[]},{"name":"tex","value":"XubEW9+1+hkJqH7jXe5MrA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，","children":[]},{"name":"tex","value":"Hz6y44ELFVLLNrLVhO3CQA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"满足","children":[]},{"name":"tex","value":"9PdFkyNZN0jrsDSPEdYME6wOHvbzZrAciBqk+clCySA4fJtd+BuebTGFqFjtSGx380z/DcywtvBNRquvgKYzua7QEUClC05e2D78HZHsNuDly8dINqdl5pYZfYMUaumF?widthRatio=6.5&heightRatio=4.214","children":[]},{"name":"txt","value":"，则","children":[]},{"name":"tex","value":"Qcx7AaI1TwmeGmFJ+TKZbJSHIrBHfgC92N3Lpr7j5KY=?widthRatio=4.714&heightRatio=2.0","children":[]},{"name":"txt","value":"的取值范围是（ ）。","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 1,
+      "difficulty": 5.34484048629173,
+      "shortSource": "",
+      "accessories": [
+        {
+          "options": [
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"L7k+jzhoJljK1sFL9zOQnAj+VunMwFQWS7+FQIYbiic=?widthRatio=3.143&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"hLH3IiShiHLo+NMb6EVUnEs6ExWWZ059yiXNoMiloHE=?widthRatio=3.143&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"WJlFxuqZtf06BW/tJgUKeCjRppyQglXuj/u9xhJAD1I/zV7zICIowpZxzbPYoDlHs8PtvK36opGBLbY9czZbDQ==?widthRatio=8.857&heightRatio=2.0","children":[]}]}]}",
+            "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"tex","value":"SQ/L/dxFUHevoJugn2AAuR8w9KScgJIHxKvSw3AlKXdLkNcp164c4v747PFRnoJKLWl51TZFJxKwwvgygKF+Yw==?widthRatio=8.857&heightRatio=2.0","children":[]}]}]}"
+          ],
+          "type": 102
+        }
+      ],
+      "correctAnswer": {
+        "choice": "2",
+        "weights": null,
+        "type": 201
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查线性规划和直线的斜率。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"由约束条件画出线性规划问题的可行域如下图阴影区域所示，","children":[]}]},{"name":"p","value":"","children":[{"name":"img","value":"14f49ac744b9a12.png?width=278&height=283","children":[]}]},{"name":"p","value":"","children":[{"name":"tex","value":"Qcx7AaI1TwmeGmFJ+TKZbJSHIrBHfgC92N3Lpr7j5KY=?widthRatio=4.714&heightRatio=2.0","children":[]},{"name":"txt","value":"的取值范围即为可行域的点与点","children":[]},{"name":"tex","value":"cjF77n/m9C9OjbgCla1RBg==?widthRatio=2.929&heightRatio=1.286","children":[]},{"name":"txt","value":"所在直线斜率的一半的取值范围，由图可知，斜率的取值范围为","children":[]},{"name":"tex","value":"FWcj/HgE6kRmTqwWeJLpW15X4s57iTh7gsLkiBJA9JDl9+ziAkXXUE7EFwgAlhrQ?widthRatio=8.643&heightRatio=2.0","children":[]},{"name":"txt","value":"，所以","children":[]},{"name":"tex","value":"Qcx7AaI1TwmeGmFJ+TKZbJSHIrBHfgC92N3Lpr7j5KY=?widthRatio=4.714&heightRatio=2.0","children":[]},{"name":"tex","value":"ftaZ3LioKKxsL+8lSUt/JA==?widthRatio=0.643&heightRatio=1.286","children":[]},{"name":"tex","value":"l4EYBuZhG/vlcuB9lKHqOGURbBne50BKcTNtrMJH1fLt4mydnD7fSTJAEuP8It8/auWdl/p0CwM1pNMGZBlefQ==?widthRatio=8.857&heightRatio=2.0","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"故本题正确答案为C。","children":[]}]}]}",
+      "source": "2014-2015学年山西省大同市大同一中高一下学期期末考试：数学第12题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 195377,
+          "name": "直线的倾斜角与斜率",
+          "type": 51
+        },
+        {
+          "id": 191415,
+          "name": "直线的倾斜角与斜率",
+          "type": 61
+        },
+        {
+          "id": 195451,
+          "name": "简单线性规划",
+          "type": 51
+        },
+        {
+          "id": 191503,
+          "name": "简单线性规划",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    },
+    "1698063": {
+      "id": 1698063,
+      "courseId": 43,
+      "content": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（本小题满分13分）","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"甲、乙两地相距","children":[]},{"name":"tex","value":"r65Ank8E1dV+BtDCLn5S+w==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"千米，一船由甲地逆水匀速行驶至乙地，水速为常量","children":[]},{"name":"tex","value":"QPadlhZ3vYN/Hi29gpTrFw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"（单位：千米/小时），船在静水中的最大速度为","children":[]},{"name":"tex","value":"SIrTd7CGXw9GcBP//JIn6w==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"千米/小时（","children":[]},{"name":"tex","value":"6uH2PVEKKYpgmHtEn0bndw==?widthRatio=2.286&heightRatio=1.286","children":[]},{"name":"txt","value":"），已知船每小时的燃料费用（单位：元）与船在静水中的速度","children":[]},{"name":"tex","value":"h43hk9rvfl6MMCCLibYZ7g==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"（单位：千米/小时）的平方成正比，比例系数为","children":[]},{"name":"tex","value":"pc/qlnA3cxu8Ag9jp3tYHQ==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）把全程燃料费用","children":[]},{"name":"tex","value":"Hz6y44ELFVLLNrLVhO3CQA==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"（单位：元）表示为船在静水中的速度","children":[]},{"name":"tex","value":"h43hk9rvfl6MMCCLibYZ7g==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"的函数，并求出这个函数的定义域；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）为了使全程燃料费用最小，船的实际前进速度应为多少？","children":[]}]}]}",
+      "materialId": 0,
+      "materialIndex": 0,
+      "type": 13,
+      "difficulty": 5.0,
+      "shortSource": null,
+      "accessories": [
+        
+      ],
+      "correctAnswer": {
+        "answer": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"（1）根据题意：船每小时的燃料费用与船在静水中的速度","children":[]},{"name":"tex","value":"h43hk9rvfl6MMCCLibYZ7g==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"的平方成正比，比例系数为","children":[]},{"name":"tex","value":"pc/qlnA3cxu8Ag9jp3tYHQ==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"，所以船每小时的燃料费用为","children":[]},{"name":"tex","value":"PzS5qAL7rRpfdPfVA/bSSQ==?widthRatio=1.5&heightRatio=1.286","children":[]},{"name":"txt","value":"，全程航行时间为","children":[]},{"name":"tex","value":"Ors6wbuRmBvK16targyFLat3MPx8vnw9LPbxOKbKIJk=?widthRatio=2.286&heightRatio=2.429","children":[]},{"name":"txt","value":"，      ......2分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"所以全程燃料费用","children":[]},{"name":"tex","value":"cOszTfhZbQ03OLD1XW0Lvd+3ZMX5d2T7588ixWYSJw8=?widthRatio=6.357&heightRatio=1.929","children":[]},{"name":"txt","value":"（","children":[]},{"name":"tex","value":"Q8u48jkIANf7DWdqVL8phPzrLAkpv6gaek8D/KA41Qc=?widthRatio=4.143&heightRatio=1.286","children":[]},{"name":"txt","value":"）。      ......4分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）由（1）得：","children":[]},{"name":"tex","value":"cOszTfhZbQ03OLD1XW0Lvd+3ZMX5d2T7588ixWYSJw8=?widthRatio=6.357&heightRatio=1.929","children":[]},{"name":"txt","value":"      ......5分","children":[]}]},{"name":"p","value":"","children":[{"name":"tex","value":"Vhc/ExzmPiQilcYO/Q5jL2J7QoJ1K4ncx83z35eWgw4vqrkao87q8Rxr2Du1nLLi?widthRatio=8.071&heightRatio=2.357","children":[]},{"name":"tex","value":"42qmHXRDVbo0ERFJx3QHUffrmnXl9fcBiNPDPbGdfuw=?widthRatio=8.5&heightRatio=2.357","children":[]},{"name":"tex","value":"CF8+U6HxQvPdOV4LKbvIOMSXRPXn8szFZlE1+WK5nPGRi5uA3K/pEiVEspvfFYPh?widthRatio=10.643&heightRatio=2.357","children":[]},{"name":"txt","value":"      ......7分","children":[]}]},{"name":"p","value":"","children":[{"name":"tex","value":"GpkxV4yyzvKwPtIvDPPZGddU8qRI6flBz1iGW/qb673TIMAXHeVh9p7lzDzyi4Z30Je7/Gi3gdSY765jCSh//ptmxLGT8uLHjERmdX+hDYo=?widthRatio=12.143&heightRatio=2.929","children":[]},{"name":"tex","value":"y7qXz7aIX9q1VegFcI+o0w==?widthRatio=3.071&heightRatio=1.286","children":[]},{"name":"txt","value":"（当且仅当","children":[]},{"name":"tex","value":"+ur+1mGKHts401Tw8DpQHXokzuU2iHDFjljst0xVBcE=?widthRatio=5.857&heightRatio=2.357","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"iif/bDCSpXPwBXmjK8Yoxg==?widthRatio=2.857&heightRatio=1.286","children":[]},{"name":"txt","value":"时，等号成立）。      ......8分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"①当","children":[]},{"name":"tex","value":"UwpzerLNsfA1wk8MmCzUo1xRn128WJ9gKDmfxtWTBgk=?widthRatio=4.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"yC6FtkrXQcNE4AojPAe4q4KVwIwM2g6R9VwEBtcHlbA=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时，","children":[]},{"name":"tex","value":"W1kBsBUViQSOB2fciwiBS2IL6lErTkEQntVoBwnUIwo=?widthRatio=5.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，此时船的前进速度为","children":[]},{"name":"tex","value":"iHzeLTqFQA8PIm0lRrMelw==?widthRatio=4.5&heightRatio=1.286","children":[]},{"name":"txt","value":"；      ......10分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"②当","children":[]},{"name":"tex","value":"hFS5/fYOTfL2vugrDP/8iWVm31sdRW1HOLaCfjZ/OmU=?widthRatio=4.143&heightRatio=1.286","children":[]},{"name":"txt","value":"，即","children":[]},{"name":"tex","value":"nUH9SM96i3jFGl65w0UI1A==?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时，函数","children":[]},{"name":"tex","value":"cOszTfhZbQ03OLD1XW0Lvd+3ZMX5d2T7588ixWYSJw8=?widthRatio=6.357&heightRatio=1.929","children":[]},{"name":"txt","value":"在","children":[]},{"name":"tex","value":"Jij6UMTyyaK0gCUkLMrp4SoODdTMvjTP3XCUizMr3MM=?widthRatio=2.0&heightRatio=1.286","children":[]},{"name":"txt","value":"区间内单调递减，所以","children":[]},{"name":"tex","value":"Gt+h5K3607jW3Ba7tJioHBURrlFcdoG1YjP/HGj1kR7Ah4Nk29DVV3BVfrVEcd+k?widthRatio=7.143&heightRatio=2.357","children":[]},{"name":"txt","value":"，此时船的前进速度为","children":[]},{"name":"tex","value":"yTYIhn8i9UA9d70jT0r3zA==?widthRatio=2.214&heightRatio=1.286","children":[]},{"name":"txt","value":"。      ......12分","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"综上所述：为了使全程燃料费用最小，当","children":[]},{"name":"tex","value":"yC6FtkrXQcNE4AojPAe4q4KVwIwM2g6R9VwEBtcHlbA=?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时，船的实际前进速度应为","children":[]},{"name":"tex","value":"QPadlhZ3vYN/Hi29gpTrFw==?widthRatio=0.571&heightRatio=1.286","children":[]},{"name":"txt","value":"千米/小时；当","children":[]},{"name":"tex","value":"nUH9SM96i3jFGl65w0UI1A==?widthRatio=2.786&heightRatio=1.286","children":[]},{"name":"txt","value":"时，船的实际前进速度应为","children":[]},{"name":"tex","value":"yTYIhn8i9UA9d70jT0r3zA==?widthRatio=2.214&heightRatio=1.286","children":[]},{"name":"txt","value":"千米/小时。      ......13分","children":[]}]}]}",
+        "type": 203
+      },
+      "solution": "{"name":"doc","value":"","children":[{"name":"p","value":"","children":[{"name":"txt","value":"本题主要考查函数的性质和均值不等式。","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（1）根据题意，用速度","children":[]},{"name":"tex","value":"h43hk9rvfl6MMCCLibYZ7g==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"表示船每小时的燃料费用，全程航行时间，进而得到用速度","children":[]},{"name":"tex","value":"h43hk9rvfl6MMCCLibYZ7g==?widthRatio=0.5&heightRatio=1.286","children":[]},{"name":"txt","value":"表示的全程燃料费用函数；","children":[]}]},{"name":"p","value":"","children":[{"name":"txt","value":"（2）根据（1），进行化简，利用均值不等式和函数的性质，分类讨论即可得到结果。","children":[]}]}]}",
+      "source": "2014-2015学年四川省雅安市高二上学期期末考试：理数第20题",
+      "solutionAccessories": [
+        
+      ],
+      "flags": null,
+      "tags": null,
+      "keypoints": [
+        {
+          "id": 196071,
+          "name": "函数解析式的认识",
+          "type": 61
+        },
+        {
+          "id": 195349,
+          "name": "函数的概念与图象",
+          "type": 51
+        },
+        {
+          "id": 223067,
+          "name": "均值不等式",
+          "type": 51
+        },
+        {
+          "id": 196203,
+          "name": "利用均值不等式求最值",
+          "type": 61
+        }
+      ],
+      "subQuestionSolutions": null,
+      "score": 0.0
+    }
+  },
+  "materials": {
+    
+  }
+}
