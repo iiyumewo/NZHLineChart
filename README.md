@@ -32,8 +32,7 @@ NZHLineChart is a highly customizable line chart tool, and easy to modify the co
     }
     line1.pointStyleArray = zeroArray;
 ```
-![NZHLineChartSingle]
-(https://github.com/iiyumewo/NZHLineChart/blob/master/ReadMe/NZHLineChartSingle.gif?raw=true)
+![NZHLineChartSingle](https://github.com/iiyumewo/NZHLineChart/blob/master/ReadMe/NZHLineChartSingle.gif?raw=true)
 
 3. Add more line into the line array of the chart:
 ```Objective-C
@@ -46,5 +45,4 @@ NZHLineChart is a highly customizable line chart tool, and easy to modify the co
     line3.pointStyleArray = zeroArray;
     [lineChart setLinesData:@[line1, line2, line3]];
 ```
-![NZHLineChartThree]
-(https://github.com/iiyumewo/NZHLineChart/blob/master/ReadMe/NZHLineChartThree.gif?raw=true)
+![NZHLineChartThree](https://github.com/iiyumewo/NZHLineChart/blob/master/ReadMe/NZHLineChartThree.gif?raw=true)
